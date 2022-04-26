@@ -1,0 +1,23 @@
+{
+  "name": "equalizer-landing-page",
+  "version": "1.0.0",
+  "description": "Poject made with Frontend Mentor",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/styles.css",
+    "htmlhint": "htmlhint ./index.html",
+    "stylelint": "stylelint ./sass/"
+  },
+  "author": "Laure Réformatsky",
+  "license": "ISC",
+  "devDependencies": {
+    "doiuse": "^4.4.1",
+    "htmlhint": "^1.1.4",
+    "postcss": "^8.4.12",
+    "postcss-scss": "^4.0.3",
+    "sass": "^1.50.0",
+    "stylelint": "^14.7.1",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-scss": "^4.2.0"
+  }
+}
