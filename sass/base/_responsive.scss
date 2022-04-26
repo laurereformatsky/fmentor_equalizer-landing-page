@@ -1,0 +1,197 @@
+/* RESPONSIVE */
+@media only screen and (max-width: map-get($breakings-points, "desktop")) {
+  /* GENERAL STYLES */
+  body {
+    padding: 6.2rem 3.9rem;
+  }
+}
+
+@media only screen and (max-width: map-get($breakings-points, "tab")) {
+  /* GENERAL STYLES */
+  body {
+    background-image: url("../assets/bg-main-tablet.png");
+    background-position: top -11.2rem left -25.4rem;
+  }
+
+  div.bg {
+    width: 26.6rem;
+    height: 40rem;
+    top: -3.2rem;
+    right: -3.6rem;
+  }
+
+  /* HEADER */
+  .header {
+    &__presentation {
+      margin-top: 9.5rem;
+
+      &__title {
+        font-size: map-get($font-size, "tab", "large");
+        letter-spacing: map-get($letter-spacing, "x-large");
+        line-height: map-get($line-height, "tab", "large");
+      }
+
+      &__p {
+        margin-top: 3.6rem;
+        font-size: map-get($font-size, "tab", "small");
+        line-height: map-get($line-height, "tab", "small");
+      }
+    }
+  }
+
+  /* MAIN */
+  main.main {
+    margin: {
+      top: 25.6rem;
+      bottom: 18.3rem;
+    }
+  }
+
+  /* SECTION PLAN */
+  .plan {
+    &-bg {
+      width: 28rem;
+      height: 42rem;
+      top: 0;
+      left: 23rem;
+    }
+
+    &-illustration {
+      width: 27rem;
+      height: 55.6rem;
+      top: -13.8rem;
+      left: 6.4rem;
+    }
+
+    &-card {
+      width: 39.9rem;
+      height: 54.6rem;
+      bottom: -9.6rem;
+      right: 5.8rem;
+      padding: 4.8rem;
+      padding-right: 4.9rem;
+
+      &-prenium {
+        &__title {
+          font-size: map-get($font-size, "tab", "medium");
+          line-height: map-get($line-height, "tab", "medium");
+        }
+
+        &__p {
+          margin-top: 2rem;
+          font-size: map-get($font-size, "tab", "small");
+          line-height: map-get($line-height, "tab", "small");
+        }
+      }
+    }
+  }
+
+  /* BUTTON */
+  a.button-android {
+    margin-top: 1.6rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-direction: column;
+
+    &__contact {
+      margin-top: 3.6rem;
+    }
+
+    &__social-media {
+      margin-top: 7.1rem;
+      align-self: flex-start;
+    }
+  }
+}
+
+@media only screen and (max-width: map-get($breakings-points, "max-mobile")) {
+  /* GENERAL STYLES */
+  body {
+    padding: 4rem 0;
+    background-image: url("../assets/bg-main-mobile.png");
+    background-position: top -10.4rem left 15.9rem;
+  }
+
+  div.bg {
+    display: none;
+  }
+
+  header,
+  footer {
+    max-width: 32.7rem;
+    padding-left: 2.4rem;
+  }
+
+  /* HEADER */
+  .header {
+    &__presentation {
+      margin-top: 6.4rem;
+
+      &__title {
+        font-size: map-get($font-size, "mobile", "x-medium");
+        letter-spacing: map-get($letter-spacing, "large");
+        line-height: map-get($line-height, "mobile", "medium");
+      }
+
+      &__p {
+        margin-top: 2.9rem;
+        font-size: map-get($font-size, "mobile", "x-small");
+        line-height: map-get($line-height, "mobile", "small");
+      }
+    }
+  }
+
+  /* MAIN */
+  main.main {
+    margin: {
+      top: 17.3rem;
+      bottom: 39rem;
+    }
+  }
+
+  /* SECTION PLAN */
+  .plan {
+    &-bg {
+      left: calc(4.8rem * 2.05);
+    }
+
+    &-illustration {
+      width: 20.8rem;
+      height: 43rem;
+      top: -9.8rem;
+      left: calc(8.1rem * 1.55);
+    }
+
+    &-card {
+      width: 100%;
+      height: 54.6rem;
+      bottom: -32.6rem;
+      right: 0;
+      padding: {
+        right: 3.7rem;
+        left: 3.6rem;
+      }
+
+      &-prenium {
+        &__p {
+          margin-top: 3.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: map-get($breakings-points, "mobile")) {
+  /* SECTION PLAN */
+  .plan {
+    &-bg {
+      left: 4.8rem;
+    }
+
+    &-illustration {
+      left: 8.1rem;
+    }
+  }
+}

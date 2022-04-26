@@ -1,0 +1,35 @@
+/* FOOTER */
+.footer {
+  min-height: 7.9rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__contact {
+    max-width: 36.6rem;
+    line-height: map-get($line-height, "desktop", "small");
+
+    &__p > a.contact-link {
+      color: $neutral-color-dark;
+    }
+  }
+
+  &__social-media {
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+  }
+}
+
+ul li.social-media {
+  width: 2rem;
+  height: 2rem;
+  list-style-type: none;
+
+  > a:hover,
+  > a:active {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(66%) saturate(493%) hue-rotate(325deg) brightness(100%) contrast(105%);
+  }
+}

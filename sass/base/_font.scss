@@ -1,0 +1,22 @@
+/* FONT STYLES */
+h1,
+h2,
+p[class$="__price"],
+a {
+  font-weight: map-get($font-weight, "bold");
+}
+
+p[class$="__p"],
+small {
+  font-weight: map-get($font-weight, "regular");
+}
+
+small[class$="__rights"],
+small + p[class$="contact__p"] {
+  font-size: map-get($font-size, "desktop", "x-small");
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}

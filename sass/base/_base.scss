@@ -1,0 +1,57 @@
+/* GENERAL STYLES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  padding: 6.2rem 0;
+  position: relative;
+  background-color: $neutral-color-light;
+  background-image: url("../assets/bg-main-desktop.png");
+  background-position: top -11.2rem left -14.6rem;
+  background-repeat: no-repeat;
+  font-family: $font-family;
+}
+
+div.bg {
+  width: 31.2rem;
+  height: 46.8rem;
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  z-index: -1;
+}
+
+div.container {
+  max-width: 111rem;
+  margin: 0 auto;
+}
+
+body,
+div.container,
+header,
+main,
+div.plan,
+footer,
+img {
+  width: 100%;
+}
+
+[class$="__logo"] {
+  width: 14.7rem;
+  height: 3.3rem;
+}
+
+div.plan,
+article,
+a.button {
+  border-radius: 1.2rem;
+}

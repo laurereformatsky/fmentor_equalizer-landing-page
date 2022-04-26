@@ -1,0 +1,396 @@
+/* GENERAL STYLES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 6.2rem 0;
+  position: relative;
+  background-color: #fcfaf9;
+  background-image: url("../assets/bg-main-desktop.png");
+  background-position: top -11.2rem left -14.6rem;
+  background-repeat: no-repeat;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+div.bg {
+  width: 31.2rem;
+  height: 46.8rem;
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  z-index: -1;
+}
+
+div.container {
+  max-width: 111rem;
+  margin: 0 auto;
+}
+
+body,
+div.container,
+header,
+main,
+div.plan,
+footer,
+img {
+  width: 100%;
+}
+
+[class$=__logo] {
+  width: 14.7rem;
+  height: 3.3rem;
+}
+
+div.plan,
+article,
+a.button {
+  border-radius: 1.2rem;
+}
+
+/* FONT STYLES */
+h1,
+h2,
+p[class$=__price],
+a {
+  font-weight: 700;
+}
+
+p[class$=__p],
+small {
+  font-weight: 400;
+}
+
+small[class$=__rights],
+small + p[class$=contact__p] {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+/* HEADER */
+.header__presentation {
+  margin-top: 12.7rem;
+  color: #191826;
+}
+.header__presentation__title {
+  max-width: 101.5rem;
+  font-size: 8.8rem;
+  letter-spacing: -0.1rem;
+  line-height: 8.8rem;
+}
+.header__presentation__p {
+  max-width: 82.5rem;
+  margin-top: 4rem;
+  font-size: 2rem;
+  line-height: 3.4rem;
+}
+
+/* MAIN */
+main.main {
+  display: block;
+  margin-top: 32.1rem;
+  margin-bottom: 20.2rem;
+}
+
+/* SECTION PLAN */
+.plan {
+  height: 60rem;
+  position: relative;
+  background-color: #191826;
+}
+.plan-bg, .plan-illustration, .plan-card {
+  position: absolute;
+}
+.plan-bg {
+  width: 31.2rem;
+  height: 46.8rem;
+  top: -4rem;
+  left: 33.7rem;
+}
+.plan-illustration {
+  width: 31.2rem;
+  height: 64.2rem;
+  top: -21.3rem;
+  left: 10.2rem;
+}
+.plan-card {
+  width: 44.6rem;
+  height: 62.7rem;
+  bottom: -11.5rem;
+  right: 9.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5.8rem 5.9rem 4.8rem 5.4rem;
+  background-color: #fa7453;
+  color: #fcfaf9;
+}
+.plan-card-prenium__title {
+  font-size: 4rem;
+  line-height: 5.2rem;
+}
+.plan-card-prenium__p {
+  margin-top: 3.3rem;
+  font-size: 2rem;
+  line-height: 3.4rem;
+}
+.plan-card-price {
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+}
+.plan-card-price__price {
+  font-size: 6.5rem;
+  line-height: 5.2rem;
+}
+.plan-card-price__priceby {
+  margin-left: 1.6rem;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.02rem;
+}
+
+/* BUTTON */
+a.button {
+  height: 6.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.018rem;
+}
+a.button-ios {
+  background-color: #191826;
+  color: #fcfaf9;
+}
+a.button-ios::before {
+  content: url("../assets/icon-apple.svg");
+  width: 1.8rem;
+  height: 2.3rem;
+  margin-right: 0.8rem;
+}
+a.button-ios:hover, a.button-ios:active {
+  background-color: #66e2dc;
+}
+a.button-android {
+  margin-top: 1.8rem;
+  background-color: #fcfaf9;
+  color: #191826;
+}
+a.button-android::before {
+  content: url("../assets/icon-android.svg");
+  width: 1.7rem;
+  height: 2.3rem;
+  margin-right: 0.8rem;
+}
+a.button-android:hover, a.button-android:active {
+  background-color: #ffb964;
+}
+
+/* FOOTER */
+.footer {
+  min-height: 7.9rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer__contact {
+  max-width: 36.6rem;
+  line-height: 2.6rem;
+}
+.footer__contact__p > a.contact-link {
+  color: #191826;
+}
+.footer__social-media {
+  width: 10rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+ul li.social-media {
+  width: 2rem;
+  height: 2rem;
+  list-style-type: none;
+}
+ul li.social-media > a:hover,
+ul li.social-media > a:active {
+  filter: brightness(0) saturate(100%) invert(76%) sepia(66%) saturate(493%) hue-rotate(325deg) brightness(100%) contrast(105%);
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1200px) {
+  /* GENERAL STYLES */
+  body {
+    padding: 6.2rem 3.9rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* GENERAL STYLES */
+  body {
+    background-image: url("../assets/bg-main-tablet.png");
+    background-position: top -11.2rem left -25.4rem;
+  }
+
+  div.bg {
+    width: 26.6rem;
+    height: 40rem;
+    top: -3.2rem;
+    right: -3.6rem;
+  }
+
+  /* HEADER */
+  .header__presentation {
+    margin-top: 9.5rem;
+  }
+  .header__presentation__title {
+    font-size: 6.4rem;
+    letter-spacing: -0.073rem;
+    line-height: 6.4rem;
+  }
+  .header__presentation__p {
+    margin-top: 3.6rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  /* MAIN */
+  main.main {
+    margin-top: 25.6rem;
+    margin-bottom: 18.3rem;
+  }
+
+  /* SECTION PLAN */
+  .plan-bg {
+    width: 28rem;
+    height: 42rem;
+    top: 0;
+    left: 23rem;
+  }
+  .plan-illustration {
+    width: 27rem;
+    height: 55.6rem;
+    top: -13.8rem;
+    left: 6.4rem;
+  }
+  .plan-card {
+    width: 39.9rem;
+    height: 54.6rem;
+    bottom: -9.6rem;
+    right: 5.8rem;
+    padding: 4.8rem;
+    padding-right: 4.9rem;
+  }
+  .plan-card-prenium__title {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  .plan-card-prenium__p {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  /* BUTTON */
+  a.button-android {
+    margin-top: 1.6rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-direction: column;
+  }
+  .footer__contact {
+    margin-top: 3.6rem;
+  }
+  .footer__social-media {
+    margin-top: 7.1rem;
+    align-self: flex-start;
+  }
+}
+@media only screen and (max-width: 576px) {
+  /* GENERAL STYLES */
+  body {
+    padding: 4rem 0;
+    background-image: url("../assets/bg-main-mobile.png");
+    background-position: top -10.4rem left 15.9rem;
+  }
+
+  div.bg {
+    display: none;
+  }
+
+  header,
+footer {
+    max-width: 32.7rem;
+    padding-left: 2.4rem;
+  }
+
+  /* HEADER */
+  .header__presentation {
+    margin-top: 6.4rem;
+  }
+  .header__presentation__title {
+    font-size: 4rem;
+    letter-spacing: -0.045rem;
+    line-height: 4.8rem;
+  }
+  .header__presentation__p {
+    margin-top: 2.9rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  /* MAIN */
+  main.main {
+    margin-top: 17.3rem;
+    margin-bottom: 39rem;
+  }
+
+  /* SECTION PLAN */
+  .plan-bg {
+    left: 9.84rem;
+  }
+  .plan-illustration {
+    width: 20.8rem;
+    height: 43rem;
+    top: -9.8rem;
+    left: 12.555rem;
+  }
+  .plan-card {
+    width: 100%;
+    height: 54.6rem;
+    bottom: -32.6rem;
+    right: 0;
+    padding-right: 3.7rem;
+    padding-left: 3.6rem;
+  }
+  .plan-card-prenium__p {
+    margin-top: 3.3rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /* SECTION PLAN */
+  .plan-bg {
+    left: 4.8rem;
+  }
+  .plan-illustration {
+    left: 8.1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

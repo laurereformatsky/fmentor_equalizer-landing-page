@@ -1,0 +1,70 @@
+/* SECTION PLAN */
+.plan {
+  height: 60rem;
+  position: relative;
+  background-color: $neutral-color-dark;
+
+  &-bg,
+  &-illustration,
+  &-card {
+    position: absolute;
+  }
+
+  &-bg {
+    width: 31.2rem;
+    height: 46.8rem;
+    top: -4rem;
+    left: 33.7rem;
+  }
+
+  &-illustration {
+    width: 31.2rem;
+    height: 64.2rem;
+    top: -21.3rem;
+    left: 10.2rem;
+  }
+
+  &-card {
+    width: 44.6rem;
+    height: 62.7rem;
+    bottom: -11.5rem;
+    right: 9.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5.8rem 5.9rem 4.8rem 5.4rem;
+    background-color: $secondary-color;
+    color: $neutral-color-light;
+
+    &-prenium {
+      &__title {
+        font-size: map-get($font-size, "desktop", "x-medium");
+        line-height: map-get($line-height, "desktop", "large");
+      }
+
+      &__p {
+        margin-top: 3.3rem;
+        font-size: map-get($font-size, "desktop", "medium");
+        line-height: map-get($line-height, "desktop", "x-medium");
+      }
+    }
+
+    &-price {
+      height: 5.2rem;
+      display: flex;
+      align-items: center;
+
+      &__price {
+        font-size: map-get($font-size, "desktop", "large");
+        line-height: map-get($line-height, "desktop", "large");
+      }
+
+      &__priceby {
+        margin-left: 1.6rem;
+        font-size: map-get($font-size, "desktop", "medium");
+        line-height: map-get($line-height, "desktop", "medium");
+        letter-spacing: map-get($letter-spacing, "medium");
+      }
+    }
+  }
+}

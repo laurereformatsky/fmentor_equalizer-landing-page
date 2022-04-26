@@ -1,0 +1,21 @@
+/* HEADER */
+.header {
+  &__presentation {
+    margin-top: 12.7rem;
+    color: $neutral-color-dark;
+
+    &__title {
+      max-width: 101.5rem;
+      font-size: map-get($font-size, "desktop", "x-large");
+      letter-spacing: map-get($letter-spacing, "x-small");
+      line-height: map-get($line-height, "desktop", "x-large");
+    }
+
+    &__p {
+      max-width: 82.5rem;
+      margin-top: 4rem;
+      font-size: map-get($font-size, "desktop", "medium");
+      line-height: map-get($line-height, "desktop", "x-medium");
+    }
+  }
+}
